@@ -9,7 +9,7 @@ cp configs/.* qwerty
 
 cd $PROJECT_NAME
 
-echo "Create empty files and folder structure..."
+echo "Creating empty files and folder structure..."
 mkdir -p __tests__/unit
 mkdir -p __tests__/integration
 mkdir -p __tests__/system
