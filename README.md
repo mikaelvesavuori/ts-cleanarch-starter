@@ -23,7 +23,7 @@ git clone https://github.com/mikaelvesavuori/ts-cleanarch-starter.git && cd ts-c
 
 There's a folder for tests (`__tests__`) and a config (`jest.config.js`) ready to use. The config collects coverage, and sets a minimum of 90% coverage as acceptable. Change as needed.
 
-Put test data in `__testdata`. It's just cleaner that way, in my humble opinion.
+Put test data in `__testdata__`. It's just cleaner that way, in my humble opinion.
 
 My way of testing when using Jest and Typescript is to write tests in `mjs` format, to support the newer `import` syntax. You also need to compile `ts` files to "regular" Javascript first (see the test command below).
 
