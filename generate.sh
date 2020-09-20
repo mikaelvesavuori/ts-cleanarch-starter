@@ -16,11 +16,11 @@ mkdir -p __tests__/system
 
 mkdir -p __testdata__
 
-mkdir -p src/app/contracts
-mkdir -p src/app/controllers
-mkdir -p src/domain/entities
+mkdir -p src/contracts
+mkdir -p src/controllers
+mkdir -p src/entities
 mkdir -p src/frameworks
-mkdir -p src/usecases
+mkdir -p src/usecases/interactors
 
 touch src/main.ts
 touch src/config.ts
