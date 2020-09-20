@@ -9,8 +9,10 @@ What you get from this starter is a bit of configuration, npm install commands, 
 Want this is a oneliner? Then you'd run:
 
 ```
-git clone https://github.com/mikaelvesavuori/ts-cleanarch-starter.git && cd ts-cleanarch-starter && sh generate.sh
+git clone https://github.com/mikaelvesavuori/ts-cleanarch-starter.git && cd ts-cleanarch-starter && sh generate.sh && rm -rf configs && rm generate.sh
 ```
+
+Note that the above one-liner also removes the scaffold code and generator.
 
 **Stack:**
 
@@ -25,22 +27,12 @@ There's a folder for tests (`__tests__`) and a config (`jest.config.js`) ready t
 
 Put test data in `__testdata__`. It's just cleaner that way, in my humble opinion.
 
-My way of testing when using Jest and Typescript is to write tests in `mjs` format, to support the newer `import` syntax. You also need to compile `ts` files to "regular" Javascript first (see the test command below).
-
-So, an example file import in a file called `demo.test.mjs`(`/__tests__/unit/demo.test.mjs`) could look like this:
-
-```
-import { thing } from '../../dist/main';
-
-console.log(thing);
-```
-
 ## Suggested commands to add to npm scripts
 
 ### Test
 
 ```
-"test": "tsc && jest --collectCoverage"
+"test": "jest --collectCoverage"
 ```
 
 ### Build
